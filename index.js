@@ -16,7 +16,6 @@ pat=$("#poletekstowe").val();
   
   request.done(function (response) { 
       
-    // Calling formal search after getting data from api 
     formatSearchResults(response); 
   });
 } 
@@ -24,15 +23,12 @@ pat=$("#poletekstowe").val();
 var pat, flag = 0; 
 function formatSearchResults(jsonResults) { 
   
-    // Storing Json Data in jsonobject variable 
     var jsonObject = jsonResults; 
   
     jsonObject.Countries.forEach(function (item) { 
   
-        // Matching user search data with api data  
         if (item.Country.toLowerCase() == pat.toLowerCase()) {
   
-            // Printing the result 
 
 var kraj = document.getElementById("kraj");
 kraj.innerHTML += "Kraj: " + item.Country + "</br>";
