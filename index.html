@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Statystyki</title>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+	body {background-image: url(wallpaper.png); background-repeat: no-repeat; background-size:cover; background-color: black; font-family: 'Raleway', sans-serif; text-align: center; color: #FFFFFF;}
+	#wyszukiwanie {position: relative; top: 280px;}
+	#naglowek {font-size: 55px;}
+	#naglowek2 {font-size: 20px;}
+	#pola {border: none; margin: 20px 0 0 0;}
+	#wynikicale {font-size: 25px;}
+	#wyniki {position: relative; top: 30px;}
+	#kraj {color: #D17A22;position: relative; top: 50px;}
+	#rezultat {position: relative; top: 50px;}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</head>
+
+<body>
+	<div id="wyszukiwanie">
+		<h id="naglowek">Covid 19 - statystyki</h><br/>
+		<h id="naglowek2">(Aby wyszukać informacje o krajach, proszę użyć angielskich nazw)</h>
+		<div id="pola">
+			<form id="polaform">
+			<input type="text" id="poletekstowe" placeholder="Podaj kraj np: Poland"/>
+			<button type="submit" id="szukaj">Szukaj</button>
+			<button type="reset" id="resetuj" onClick="this.form.reset();resetResults()">Resetuj</button>
+			</form>
+		</div>
+		<div id="wynikicale">
+			<h id="wyniki">Wyniki:</h>
+			<div id="kraj"></div>
+			<div id="rezultat"></div>
+		</div>
+	</div>
+	
+</body>
+</html>
