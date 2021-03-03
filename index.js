@@ -44,7 +44,7 @@ var totalsmier = document.getElementById("rezultat");
 totalsmier.innerHTML += "Śmierci łącznie: " + item.TotalDeaths + "</br>";
 
 var totalprzyw = document.getElementById("rezultat");
-totalprzyw.innerHTML += "Przywrócono łącznie: " + item.TotalRecovered + "</br>";
+totalprzyw.innerHTML += "Wyzdrowień łącznie: " + item.TotalRecovered + "</br>";
 			
 var nowepotw = document.getElementById("rezultat");
 nowepotw.innerHTML += "Nowe zachorowania: " + item.NewConfirmed + "</br>";  
