@@ -1,8 +1,3 @@
-$(document).ready(function() { 
-$("#polaform").submit(function(event) 
-	{ performSearch(event); }); 
-}); 
-
 function performSearch(event) { 
   var request; 
   event.preventDefault(); 
